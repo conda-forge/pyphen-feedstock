@@ -33,8 +33,12 @@ test:
 
 about:
   home: http://pyphen.org/
-  license: GPL-2.0-or-later, LGPL-2.1-or-later, MPL-1.1
-  license_file: COPYING, COPYING.GPL, COPYING.LGPL, COPYING.MPL
+  license: GPL-2.0-or-later AND LGPL-2.1-or-later AND MPL-1.1
+  license_file:
+    - COPYING
+    - COPYING.GPL
+    - COPYING.LGPL
+    - COPYING.MPL
   summary: Pure Python module to hyphenate text
   description: |
     Pyphen is a pure Python module to hyphenate text using existing Hunspell

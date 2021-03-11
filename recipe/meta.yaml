@@ -1,4 +1,4 @@
-{% set name = "Pyphen" %}
+{% set name = "pyphen" %}
 {% set version = "0.9.5" %}
 
 
@@ -7,22 +7,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Pyphen-{{ version }}.tar.gz
   sha256: 3b633a50873156d777e1f1075ba4d8e96a6ad0a3ca42aa3ea9a6259f93f18921
 
 build:
   noarch: python
   number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - python >=3.6
-    - setuptools
 
   run:
     - python >=3.6
+
+test:
+  imports:
+    - pyphen
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://pyphen.org/

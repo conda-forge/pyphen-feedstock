@@ -13,22 +13,29 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
 
   run:
-    - python
+    - python >=3.6
 
 about:
   home: http://pyphen.org/
-  license: GPL 2.0+/LGPL 2.1+/MPL 1.1
-  license_file: COPYING
+  license:
+    - GPL-2.0-or-later
+    - LGPL-2.1-or-later
+    - MPL-1.1
+  license_file:
+    - COPYING
+    - COPYING.GPL
+    - COPYING.LGPL
+    - COPYING.MPL
   summary: Pure Python module to hyphenate text
   description: |
     Pyphen is a pure Python module to hyphenate text using existing Hunspell
@@ -39,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - rmax
+    - thewchan

@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - pip
+    - pip >=21.0
     - python >=3.6
 
   run:

@@ -1,34 +1,44 @@
-{% set name = "Pyphen" %}
+{% set name = "pyphen" %}
 {% set version = "0.9.5" %}
-{% set sha256sum = "3b633a50873156d777e1f1075ba4d8e96a6ad0a3ca42aa3ea9a6259f93f18921" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256sum }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Pyphen-{{ version }}.tar.gz
+  sha256: 3b633a50873156d777e1f1075ba4d8e96a6ad0a3ca42aa3ea9a6259f93f18921
 
 build:
   noarch: python
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - pip
-    - python
-    - setuptools
+    - pip >=21.0
+    - python >=3.6
 
   run:
-    - python
+    - python >=3.6
+
+test:
+  imports:
+    - pyphen
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://pyphen.org/
-  license: GPL 2.0+/LGPL 2.1+/MPL 1.1
-  license_file: COPYING
+  license: GPL-2.0-or-later AND LGPL-2.1-or-later AND MPL-1.1
+  license_file:
+    - COPYING
+    - COPYING.GPL
+    - COPYING.LGPL
+    - COPYING.MPL
   summary: Pure Python module to hyphenate text
   description: |
     Pyphen is a pure Python module to hyphenate text using existing Hunspell
@@ -39,3 +49,4 @@ about:
 extra:
   recipe-maintainers:
     - rmax
+    - thewchan

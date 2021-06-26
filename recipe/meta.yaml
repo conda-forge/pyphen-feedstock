@@ -1,5 +1,7 @@
 {% set name = "pyphen" %}
-{% set version = "0.10.0" %}
+
+{% set version = "0.11.0" %}
+
 
 
 package:
@@ -7,8 +9,9 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Pyphen-{{ version }}.tar.gz
-  sha256: 719b21dfb4b04fbc11cc0f6112418535fe35474021120cccfffc43a25fe63128
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e2c3ed82c3a04317df5102addafe89652b0876bc6c6265f5dd4c3efaf02315e8
+
 
 build:
   noarch: python
@@ -17,6 +20,7 @@ build:
 
 requirements:
   host:
+    - flit
     - pip
     - python >=3.6
 
@@ -35,7 +39,7 @@ about:
   home: http://pyphen.org/
   license: GPL-2.0-or-later AND LGPL-2.1-or-later AND MPL-1.1
   license_file:
-    - COPYING
+    - LICENSE
     - COPYING.GPL
     - COPYING.LGPL
     - COPYING.MPL

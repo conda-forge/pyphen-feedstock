@@ -39,7 +39,7 @@ about:
   home: http://pyphen.org/
   license: GPL-2.0-or-later AND LGPL-2.1-or-later AND MPL-1.1
   license_file:
-    - COPYING
+    - LICENSE
     - COPYING.GPL
     - COPYING.LGPL
     - COPYING.MPL

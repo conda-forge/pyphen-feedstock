@@ -1,6 +1,6 @@
 {% set name = "pyphen" %}
 
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 
 
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 06873cebffd65a8fca7c20c0e3dc032655c7ee8de0f552205cad3b574265c293
+  sha256: 2892ada3e72b86fc4fc5172e2f1ad9e03929fab1aff0c0c77b35ab98d0fbf0fa
 
 
 build:

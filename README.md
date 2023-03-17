@@ -1,11 +1,11 @@
-About pyphen
-============
+About pyphen-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyphen-feedstock/blob/main/LICENSE.txt)
 
 Home: http://pyphen.org/
 
 Package license: GPL-2.0-or-later AND LGPL-2.1-or-later AND MPL-1.1
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyphen-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pure Python module to hyphenate text
 

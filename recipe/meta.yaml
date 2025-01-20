@@ -1,6 +1,6 @@
 {% set name = "pyphen" %}
 
-{% set version = "0.17.0" %}
+{% set version = "0.17.2" %}
 
 
 
@@ -10,12 +10,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1d13acd1ce37a384d7612954ae6c7801bb4c5316da0e2b937b2127ba702a3da4
+  sha256: f60647a9c9b30ec6c59910097af82bc5dd2d36576b918e44148d8b07ef3b4aa3
 
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:

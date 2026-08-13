@@ -16,7 +16,6 @@ Documentation: http://pyphen.org/
 Pyphen is a pure Python module to hyphenate text using existing Hunspell
 hyphenation dictionaries.
 
-
 Current build status
 ====================
 

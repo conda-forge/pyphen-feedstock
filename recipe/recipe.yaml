@@ -45,9 +45,9 @@ about:
   description: |
     Pyphen is a pure Python module to hyphenate text using existing Hunspell
     hyphenation dictionaries.
-  homepage: http://pyphen.org/
+  homepage: https://www.courtbouillon.org/pyphen/
   repository: https://github.com/Kozea/Pyphen
-  documentation: http://pyphen.org/
+  documentation: https://doc.courtbouillon.org/pyphen/
 
 extra:
   recipe-maintainers:

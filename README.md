@@ -3,7 +3,7 @@ About pyphen-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyphen-feedstock/blob/main/LICENSE.txt)
 
-Home: http://pyphen.org/
+Home: https://www.courtbouillon.org/pyphen/
 
 Package license: GPL-2.0-or-later AND LGPL-2.1-or-later AND MPL-1.1
 
@@ -11,7 +11,7 @@ Summary: Pure Python module to hyphenate text
 
 Development: https://github.com/Kozea/Pyphen
 
-Documentation: http://pyphen.org/
+Documentation: https://doc.courtbouillon.org/pyphen/
 
 Pyphen is a pure Python module to hyphenate text using existing Hunspell
 hyphenation dictionaries.

@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyphen
-  version: "0.18.0"
+  version: "0.18.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: bc8718e50d80c1bfb4d38a476fc708a6b5bf904549db130f06ca20376971393e
+  sha256: dbae6fbbe4f01cb206108b43573d857c67107be9d0e38eb1b08d6fa2210634a7
 
 build:
   number: 0
